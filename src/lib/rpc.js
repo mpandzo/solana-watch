@@ -6,17 +6,17 @@ dotenv.config();
 
 console.log
 
-class RpcConnection {
+class SolanaRPC {
   static instance = null;
 
   constructor() {
-    if (RpcConnection.instance) {
-      return RpcConnection.instance;
+    if (SolanaRPC.instance) {
+      return SolanaRPC.instance;
     }
 
     this.connection = null;
 
-    RpcConnection.instance = this;
+    SolanaRPC.instance = this;
   }
 
   getConnection() {
@@ -70,6 +70,6 @@ class RpcConnection {
   }
 }
 
-const rpcConnection = new RpcConnection();
+const solanaRPC = new SolanaRPC();
 
-export default rpcConnection;
+export default solanaRPC;
