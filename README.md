@@ -4,7 +4,13 @@ Solana Watch lets you observe and parse Solana transactions from PumpFun, PumpSw
 
 ## Prerequisites
 
-You need Node v20.18.1 or newer to run this code.
+- Node v20.18.1 or newer is required to run this code.
+- Create a `.env` file in the root directory with your HTTP and WSS RPC urls set as follows:
+
+```
+HTTP_RPC_URL=
+WSS_RPC_URL=
+```
 
 ## Installation
 
