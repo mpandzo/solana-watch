@@ -28,7 +28,7 @@ The `onSlotChange` method notifies the subscriber whenever a new slot is availab
 
 A Solana transaction contains one or more instructions. Each instruction specifies which program (on-chain executable) to run, what action to perform, and which accounts are affected. The program defines the rules and logic for interpreting the instruction and accessing or modifying those accounts. Accounts, on the other hand, are data storage units on the blockchain that have an owner (usually the program) and can store balances or other information.
 
-Once we have a slot id, we can check whether the slot is associated with a block by calling the RPC HTTP getBlock method which returns the block, if any, and all of its transactions. Each transaction contains instructions in serialized form where each instruction typically looks like the following:
+Once we have a slot id, we can check whether the slot is associated with a block by calling the RPC HTTP `getBlock` method which returns the block, if any, and all of its transactions. Each transaction contains instructions in serialized form where each instruction typically looks like the following:
 
 ```
 {
