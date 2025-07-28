@@ -38,7 +38,7 @@ Once we have a slot id, we can check whether the slot is associated with a block
 }
 ```
 
-Instruction data - which is stored in raw binary form on the node - is sent in Base64-encoded form because JSON does not nativelly support binary form. The solana/web3.js library automatically decodes the Base64-encoded data into Buffer when it parses the response.
+Instruction data - which is stored in raw binary form on the node - is sent in Base64-encoded form because JSON does not nativelly support binary form. We use the solana/web3.js library which automatically decodes the Base64-encoded data into Buffer when it parses the response.
 
 ### Parsing
 
