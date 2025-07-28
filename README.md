@@ -47,7 +47,8 @@ Instruction data is stored on the node in binary form to conserve space. For exa
 - the order in which they were serialized
 - whether any custom encoding schemas were used
 
-To parse instruction data we can make use of [IDLs](https://solana.com/developers/courses/onchain-development/intro-to-anchor-frontend). An IDL (Interface Description Language) specifies a program's public interface by defining the program's specific account structures, instructions and error codes.
+To parse instruction data we can make use of [IDLs](https://solana.com/developers/courses/onchain-development/intro-to-anchor-frontend). An IDL (Interface Description Language) specifies a program's public interface by defining the program's specific account structures, instructions and error codes. For many programs you can view the program idl on solscan e.g.
+[https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA#anchorProgramIdl](https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA#anchorProgramIdl).
 
 If a program is written with Anchor, we can use the corresponding IDL and the `@coral-xyz/anchor` library to decode the instructions. If not, or if decoding with the anchor library fails, we have to resort to writing our own decoder to achieve the same.
 
@@ -58,12 +59,8 @@ Anchor works out of the box in the case of PumpFun, PumpSwap and Raydium Launchp
 - https://solana.com/docs/rpc/websocket
 - https://solana.com/developers/courses/onchain-development/intro-to-anchor-frontend
 - https://www.anchor-lang.com/
+- https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA#anchorProgramIdl
 
-## Acknowledgment
+## Acknowledgments
 
-The custom RaydiumAmmParser was borrowed from [valiantrao](https://github.com/valiantrao/solana-tx-parser/tree/6c7f6afca0e10773e13eb9789ac6e309e1aaf461)
-
-For most programs you can access the program idl on solscan like so:
-https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA#anchorProgramIdl
-
-
+The custom RaydiumAmmParser was borrowed from [valiantrao](https://github.com/valiantrao/solana-tx-parser/tree/6c7f6afca0e10773e13eb9789ac6e309e1aaf461).
